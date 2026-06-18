@@ -137,10 +137,9 @@
 
 <script>
     // ==================== KONFIGURACJA ====================
-    const SUPABASE_URL = 'https://TWOJE_PROJECT_ID.supabase.co';
-    const SUPABASE_ANON_KEY = 'TWOJ_ANON_PUBLIC_KEY';
-    const GROQ_API_KEY = 'gsk_TWOJ_GROQ_API_KEY';
-
+    const SUPABASE_URL = process.env.SUPABASE_URL;
+    const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+   const GROQ_API_KEY = process.env.GROQ_API_KEY;
     const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
     let currentUser = null;
 
