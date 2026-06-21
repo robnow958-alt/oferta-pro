@@ -1246,7 +1246,7 @@ Zacznij od krótkiego zdania wprowadzającego (do klienta), następnie opisz co 
 Pisz po polsku. Ton: ${selectedTone}. Maksymalnie 200 słów. Zero pustych frazesów.`;
 
   try {
-    const res = await fetch('/functions/generate', {
+   const res = await fetch('/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
